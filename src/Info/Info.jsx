@@ -17,6 +17,8 @@ const Info = () => {
   useEffect(() => {
     console.log("랜더링 되었습니다.");
     console.log(name, nickname);
+
+    //useEffect의 cleaner 기능 영역, 업데이트가 되기 직전 또는 컴포넌트가 언마운트 될 때 수행 됨
     return () => {
       console.log(`cleanup!, componentDidMount와 componentDidUpdate`);
       console.log(name);
